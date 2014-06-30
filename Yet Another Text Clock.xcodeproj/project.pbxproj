@@ -22,6 +22,8 @@
 		2290411719606EDA007B0D78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229040F619606EDA007B0D78 /* UIKit.framework */; };
 		2290411F19606EDA007B0D78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2290411D19606EDA007B0D78 /* InfoPlist.strings */; };
 		2290412119606EDA007B0D78 /* Yet_Another_Text_ClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2290412019606EDA007B0D78 /* Yet_Another_Text_ClockTests.m */; };
+		2290412B19606EF3007B0D78 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2290412A19606EF3007B0D78 /* podfile */; };
+		CBAF3EBD2D384B21AE8DF363 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54ADB48F785948FFA3D5315A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		2290411C19606EDA007B0D78 /* Yet Another Text ClockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Yet Another Text ClockTests-Info.plist"; sourceTree = "<group>"; };
 		2290411E19606EDA007B0D78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2290412019606EDA007B0D78 /* Yet_Another_Text_ClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Yet_Another_Text_ClockTests.m; sourceTree = "<group>"; };
+		2290412A19606EF3007B0D78 /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = podfile; path = ../podfile; sourceTree = "<group>"; };
+		54ADB48F785948FFA3D5315A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		572AEE75EB4D4C6AB5D35F47 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,7 @@
 				229040F519606EDA007B0D78 /* CoreGraphics.framework in Frameworks */,
 				229040F719606EDA007B0D78 /* UIKit.framework in Frameworks */,
 				229040F319606EDA007B0D78 /* Foundation.framework in Frameworks */,
+				CBAF3EBD2D384B21AE8DF363 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +94,7 @@
 				2290411A19606EDA007B0D78 /* Yet Another Text ClockTests */,
 				229040F119606EDA007B0D78 /* Frameworks */,
 				229040F019606EDA007B0D78 /* Products */,
+				572AEE75EB4D4C6AB5D35F47 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +114,7 @@
 				229040F419606EDA007B0D78 /* CoreGraphics.framework */,
 				229040F619606EDA007B0D78 /* UIKit.framework */,
 				2290411419606EDA007B0D78 /* XCTest.framework */,
+				54ADB48F785948FFA3D5315A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 		229040F919606EDA007B0D78 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2290412A19606EF3007B0D78 /* podfile */,
 				229040FA19606EDA007B0D78 /* Yet Another Text Clock-Info.plist */,
 				229040FB19606EDA007B0D78 /* InfoPlist.strings */,
 				229040FE19606EDA007B0D78 /* main.m */,
@@ -162,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2290412419606EDA007B0D78 /* Build configuration list for PBXNativeTarget "Yet Another Text Clock" */;
 			buildPhases = (
+				508D875BD5AE468BB33FBB23 /* Check Pods Manifest.lock */,
 				229040EB19606EDA007B0D78 /* Sources */,
 				229040EC19606EDA007B0D78 /* Frameworks */,
 				229040ED19606EDA007B0D78 /* Resources */,
+				A28733B84DDA4AF682A21BA0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +244,7 @@
 			files = (
 				2290410919606EDA007B0D78 /* Main_iPad.storyboard in Resources */,
 				2290410E19606EDA007B0D78 /* Images.xcassets in Resources */,
+				2290412B19606EF3007B0D78 /* podfile in Resources */,
 				2290410619606EDA007B0D78 /* Main_iPhone.storyboard in Resources */,
 				229040FD19606EDA007B0D78 /* InfoPlist.strings in Resources */,
 			);
@@ -247,6 +259,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		508D875BD5AE468BB33FBB23 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A28733B84DDA4AF682A21BA0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		229040EB19606EDA007B0D78 /* Sources */ = {
@@ -387,26 +432,32 @@
 		};
 		2290412519606EDA007B0D78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572AEE75EB4D4C6AB5D35F47 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Yet Another Text Clock/Yet Another Text Clock-Prefix.pch";
 				INFOPLIST_FILE = "Yet Another Text Clock/Yet Another Text Clock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		2290412619606EDA007B0D78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572AEE75EB4D4C6AB5D35F47 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Yet Another Text Clock/Yet Another Text Clock-Prefix.pch";
 				INFOPLIST_FILE = "Yet Another Text Clock/Yet Another Text Clock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -470,6 +521,7 @@
 				2290412619606EDA007B0D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2290412719606EDA007B0D78 /* Build configuration list for PBXNativeTarget "Yet Another Text ClockTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +530,7 @@
 				2290412919606EDA007B0D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

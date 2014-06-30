@@ -1,0 +1,27 @@
+PODS:
+  - FontAwesomeKit (2.1.7):
+    - FontAwesomeKit/Core
+    - FontAwesomeKit/FontAwesome
+    - FontAwesomeKit/FoundationIcons
+    - FontAwesomeKit/IonIcons
+    - FontAwesomeKit/Zocial
+  - FontAwesomeKit/Core (2.1.7)
+  - FontAwesomeKit/FontAwesome (2.1.7):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.1.7):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.1.7):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.1.7):
+    - FontAwesomeKit/Core
+  - GBGradientView (1.0)
+
+DEPENDENCIES:
+  - FontAwesomeKit
+  - GBGradientView
+
+SPEC CHECKSUMS:
+  FontAwesomeKit: af6eef70d23986349284d2feb4e959459621587d
+  GBGradientView: 93a152fc2be9a638b3f36c65c1f6810934195a20
+
+COCOAPODS: 0.33.1

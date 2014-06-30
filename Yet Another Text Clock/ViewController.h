@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GBGradientView/GBGradientView.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <GBGradientViewDelegate>
+
+@property IBOutlet UILabel *seg1;
+@property IBOutlet UILabel *seg2;
+@property IBOutlet UILabel *seg3;
+@property IBOutlet UILabel *seg4;
+@property IBOutlet UILabel *seg5;
 
 @end
