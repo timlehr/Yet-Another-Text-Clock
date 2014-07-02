@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4B724872-DE34-415E-8491-E0316D829F9C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Yet Another Text Clock</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>60F43AE4-75B4-462F-920C-AE07FCF68CD4</key>
+		<string>https://github.com/timlehr/Yet-Another-Text-Clock.git</string>
+		<key>A04F3F77-EC52-4323-9F7E-FD02FDE5456E</key>
+		<string>https://github.com/timlehr/Yet-Another-Text-Clock.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Yet Another Text Clock.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>60F43AE4-75B4-462F-920C-AE07FCF68CD4</key>
+		<string>..</string>
+		<key>A04F3F77-EC52-4323-9F7E-FD02FDE5456E</key>
+		<string>../Yet Another Text Clock</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/timlehr/Yet-Another-Text-Clock.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>60F43AE4-75B4-462F-920C-AE07FCF68CD4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>60F43AE4-75B4-462F-920C-AE07FCF68CD4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Yet Another Text Clock</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A04F3F77-EC52-4323-9F7E-FD02FDE5456E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Yet Another Text Clock</string>
+		</dict>
+	</array>
+</dict>
+</plist>

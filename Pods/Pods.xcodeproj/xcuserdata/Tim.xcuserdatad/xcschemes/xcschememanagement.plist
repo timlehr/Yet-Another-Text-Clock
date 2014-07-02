@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-RQShineLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>13852520CF1D40A2824D92D3</key>
+		<key>5EC248D0C6394D85B04EBFC6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>394EF2E8FEC4480091141C35</key>
+		<key>6447CA77A04446D08D59C325</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>61342ED1369343FE9B3F1259</key>
+		<key>D4BB9E581C614FF8BBDDD059</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DBFB5CFC223D4BB4AC73F3DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

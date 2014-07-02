@@ -15,13 +15,16 @@ PODS:
   - FontAwesomeKit/Zocial (2.1.7):
     - FontAwesomeKit/Core
   - GBGradientView (1.0)
+  - RQShineLabel (0.1.1)
 
 DEPENDENCIES:
   - FontAwesomeKit
   - GBGradientView
+  - RQShineLabel
 
 SPEC CHECKSUMS:
   FontAwesomeKit: af6eef70d23986349284d2feb4e959459621587d
   GBGradientView: 93a152fc2be9a638b3f36c65c1f6810934195a20
+  RQShineLabel: aa840ab0daec4a327d43c069dc7aaf545763e7be
 
 COCOAPODS: 0.33.1

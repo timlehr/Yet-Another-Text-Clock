@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ADEB682C-AD5C-474E-BD4E-250931C0B301</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Yet Another Text Clock</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4E052223-6FC0-40AD-B3DB-205D5CC6BC2E</key>
+		<string>https://github.com/timlehr/Yet-Another-Text-Clock.git</string>
+		<key>A36A4A9A-A94D-43F0-BA50-50D1E309572E</key>
+		<string>https://github.com/timlehr/Yet-Another-Text-Clock.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Yet Another Text Clock.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4E052223-6FC0-40AD-B3DB-205D5CC6BC2E</key>
+		<string>../..</string>
+		<key>A36A4A9A-A94D-43F0-BA50-50D1E309572E</key>
+		<string>../../Yet Another Text Clock</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/timlehr/Yet-Another-Text-Clock.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4E052223-6FC0-40AD-B3DB-205D5CC6BC2E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4E052223-6FC0-40AD-B3DB-205D5CC6BC2E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Yet Another Text Clock</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A36A4A9A-A94D-43F0-BA50-50D1E309572E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Yet Another Text Clock</string>
+		</dict>
+	</array>
+</dict>
+</plist>

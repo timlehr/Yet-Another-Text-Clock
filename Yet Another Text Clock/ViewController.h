@@ -8,13 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <GBGradientView/GBGradientView.h>
+#import "RQShineLabel.h"
 
 @interface ViewController : UIViewController <GBGradientViewDelegate>
 
-@property IBOutlet UILabel *seg1;
-@property IBOutlet UILabel *seg2;
-@property IBOutlet UILabel *seg3;
-@property IBOutlet UILabel *seg4;
-@property IBOutlet UILabel *seg5;
+@property IBOutlet RQShineLabel *seg1;
+@property IBOutlet RQShineLabel *seg2;
+@property IBOutlet RQShineLabel *seg3;
+@property IBOutlet RQShineLabel *daytime;
+@property IBOutlet RQShineLabel *daytimeIcon;
+@property IBOutlet RQShineLabel *date;
 
 @end
