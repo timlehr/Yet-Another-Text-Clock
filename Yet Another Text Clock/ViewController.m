@@ -35,6 +35,8 @@ static const int hour = 2;
 @synthesize daytimeIcon;
 @synthesize date;
 
+#pragma mark - View methods
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -123,6 +125,8 @@ static const int hour = 2;
 
 #pragma mark - time display & calculations
 
+// get the int value of a specific time segment
+
 - (int) getTimeSegment: (int) segment {
     NSDate *currentTime = [NSDate date]; // get system date / time
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -139,12 +143,16 @@ static const int hour = 2;
     return [[formatter stringFromDate:currentTime] intValue]; // returns value as int
 }
 
+// round time if it's not %5 = 0
+
 - (int) getRoundedTime: (int) m {
     int rest = m%5; // modulo with 5
     if(rest==0) return m; // Already in 5min interval
     else if (rest==1 || rest==2) return m-rest; // round down
     return (m-rest+5); // round up
 }
+
+// convert the minutes from int to a string
 
 - (NSString*) minuteToText: (int) m {
     if([lang isEqualToString:@"de_DE"]){ //if language is de_DE
@@ -156,6 +164,8 @@ static const int hour = 2;
     }
     return @"Minutes";
 }
+
+// convert the hours from int to a string
 
 - (NSString*) hoursToText: (int) h : (int) m {
     
@@ -208,6 +218,8 @@ static const int hour = 2;
     return @"Hour";
 }
 
+// get the "after" / "to" prefix
+
 - (NSString*) getPrefix: (int) m {
     if([lang isEqualToString:@"de_DE"]){ //if language is de_DE
         if (m==0 || m==30 || m==60) return @"$HIDE$";
@@ -216,6 +228,8 @@ static const int hour = 2;
     }
     return @"Prefix";
 }
+
+// get the current daytime
 
 - (NSString*) getDaytime {
     NSDate *currentTime = [NSDate date]; // get system date / time
@@ -234,6 +248,8 @@ static const int hour = 2;
     return @"Tageszeit";
 }
 
+// get the icon for the current daytime
+
 - (FAKIonIcons*) getDaytimeIcon {
     NSDate *currentTime = [NSDate date]; // get system date / time
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -241,7 +257,7 @@ static const int hour = 2;
     int h = [[formatter stringFromDate:currentTime] intValue];
     NSLog(@"HH: %d",h);
     
-    if(h >= 6 && h < 18){
+    if(h >= 6 && h < 18){ // if it's daytime ...
         FAKIonIcons *Icon = [FAKIonIcons ios7SunnyIconWithSize:36];
         [Icon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
         return Icon;
@@ -252,6 +268,8 @@ static const int hour = 2;
     return Icon;
 }
 
+// get the current date formatted as String
+
 - (NSString*) getDateString {
     NSDate *currentTime = [NSDate date]; // get system date / time
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -259,6 +277,8 @@ static const int hour = 2;
     [formatter setDateFormat:@"dd. MMMM YYYY"];
     return [formatter stringFromDate:currentTime];
 }
+
+// create an array with the time segments
 
 - (NSMutableDictionary*) getTimeArray {
     NSMutableDictionary *time = [NSMutableDictionary dictionaryWithObjectsAndKeys:
@@ -291,6 +311,8 @@ static const int hour = 2;
     return time;
 }
 
+// update label with text in parameter
+
 - (void) updateLabel:(RQShineLabel*)label :(NSString*)text {
     if(label.busy || (![label.text isEqualToString:text])){
         if (label.isVisible) {
@@ -308,6 +330,7 @@ static const int hour = 2;
     }
 }
 
+// simple function to retrieve time and refresh labels
 - (void) refreshTime {
     NSDictionary *time = [self getTimeArray];
     [self updateLabel:seg1 :[[time valueForKey:@"seg1"] uppercaseString]];
@@ -319,7 +342,7 @@ static const int hour = 2;
     
 }
 
-#pragma mark  - gradient view delegate
+#pragma mark  - gradient view delegate implementation
 
 - (NSArray *)gradientColorsForGradientView:(GBGradientView *)gradientView
 {
